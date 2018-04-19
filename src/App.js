@@ -7,6 +7,7 @@ import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import DNA from './components/DNA'
 import Work from './components/Work'
+import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -21,6 +22,7 @@ class App extends Component {
             <DNA />
           </div>
         </ScrollableAnchor>
+        <Skills />
         <ScrollableAnchor id={'work'}>
           <div>
             <Work />

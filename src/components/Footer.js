@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Divider from './helper/Divider'
 
 const Footer = () => {
   return (
