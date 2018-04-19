@@ -1,0 +1,180 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: #043242;
+}
+
+h1,h2 {
+  font-family: 'Lora', serif;
+}
+h2 {
+  font-size: 2.5em;
+}
+h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size: .8em;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+p span {
+  font-size: 1.6em;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
+.divider {
+  padding: 20px 0;
+}
+.minidivider {
+  margin: 40px 0;
+}
+
+/***** NAVBAR *****/
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  color: #999;
+  z-index: 10;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.navbar ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 5px 20px;
+}
+.navbar a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+/***** HERO *****/
+.hero h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4em;
+  font-weight: 400;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.centered {
+  text-align: center;
+}
+
+.btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #032733;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #053C4F;
+  text-decoration: none;
+}
+
+/***** DNA *****/
+.dna {
+  height: 70vh;
+}
+
+/***** WORK *****/
+.work {
+  height: 100%;
+  color: #fff;
+  background-color: #043242;
+}
+.portfolio {
+  padding: 10px 10%;
+  color: #043242;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px 250px 250px;
+}
+.portfolio-item {
+  background-color: #fff;
+}
+
+/***** RESPONSIVE *****/
+.footer {
+  background-color: #053C4F;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer a {
+  color: #999;
+}
+.footer a:hover {
+  color: #fff;
+}
+.heart {
+  fill: #00e1ff;
+  position: relative;
+  margin: 0 5px;
+  top: 3px;
+  width: 15px;
+}
+
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 999px) {
+  .hero h1 {
+    top: 23%;
+  }
+}
+
+@media screen and (max-width: 643px) {
+  .hero h1 {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .hero h1 {
+    top: 15%;
+  }
+  .hero h2 {
+    top: 47%;
+  }
+  .btn {
+    top: 80%;
+    font-size: .8em;
+    padding: 15px 40px;
+  }
+}
